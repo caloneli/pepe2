@@ -84,7 +84,7 @@ public class Player {
         return this.posao;
     }
 
-    /*
+    /*a
      * Zavisno od posla daje zadatak i na osnovu odradjenog zadatka povecava balans
      * (daje platu)
      */
