@@ -14,7 +14,7 @@ public class Player {
         this.imeIgraca = ime;
 
     }
-
+    /*Jednostavna funkcija pretrazi daje mogucnost nalazenja novcica na jednu od 3 ponudjene lokacije*/
     public void pretrazi() {
         System.out.println("Sta zelite da pretrazite? :\norman, psa, travu?");
 
@@ -40,7 +40,7 @@ public class Player {
     enum Poslovi {
         PROGRAMER, CISTAC, UCITELJ;
     }
-
+    /*Daje opciju biranja poslova*/
     public void birajPosao() {
         if (imaPosao == true) {
             System.out.println("Vec imas posao, moras prvo da das otkaz!");
@@ -78,12 +78,16 @@ public class Player {
         }
 
     }
-
+    /*Ispisuje gde player radi */
     public String getPosao() {
         System.out.println("Zaposleni ste kao " + this.posao);
         return this.posao;
     }
 
+    /*
+     * Zavisno od posla daje zadatak i na osnovu odradjenog zadatka povecava balans
+     * (daje platu)
+     */
     public void radiPosao() {
         String trenutniPosao = this.posao;
         if (trenutniPosao == "")
@@ -115,25 +119,26 @@ public class Player {
                 System.out.println("Lose uradjen posao, dobio si samo 320, trenutni balans:" + this.trenutniBalans);
                 break;
             }
-            case "UCITELJ":
+        case "UCITELJ":
             System.out.println("Ko je bio Albert Einstein?");
             String albert = sc.next();
             if (albert.equals("fizicar")) {
                 this.trenutniBalans += 898;
-                System.out.println("E bravo, dobijas + 898 jer si znao odgovor. Tvoj trenutni balans je: "
+                System.out.println(
+                        "E bravo, dobijas + 898 jer si znao odgovor. Tvoj trenutni balans je: " + this.trenutniBalans);
+            } else {
+                this.trenutniBalans += 698;
+                System.out.println("Kako bre to ne znas? Dobices samo 698, strasno, vrati se u skolu! Trenutni balans:"
                         + this.trenutniBalans);
-            }else {
-                this.trenutniBalans+=698;
-                System.out.println("Kako bre to ne znas? Dobices samo 698, strasno, vrati se u skolu! Trenutni balans:"+this.trenutniBalans);
             }
 
         }
     }
 
     public enum Funkcije {
-        PRETRAZI, NADJI_POSAO, PRIKAZI_POSAO, RADI, BALANS, DAJ_OTKAZ, DODAJ_JOS_IGRACA;
+        PRETRAZI, NADJI_POSAO, PRIKAZI_POSAO, RADI, BALANS, DAJ_OTKAZ;
     }
-
+    /*Prikazuje sta je sve moguce odraditi, te korisnik moze da bira*/
     public void prikaziFunkcije() {
         int i = 1;
         for (Funkcije myVar : Funkcije.values()) {

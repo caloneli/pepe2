@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+/*Commands nisam uspeo da implementiram, zeleo sam da budu odvojene Komande i Osobe, ali se ne radi tako?*/
 public class Commands  {
     int trenutniBalans = 0;
     Scanner sc = new Scanner(System.in);
