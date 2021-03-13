@@ -7,7 +7,7 @@ public class Player {
     String posao = "";
     Scanner sc = new Scanner(System.in);
     boolean imaPosao = false;
-
+    /*Konstruktor klase Player*/
     public Player() {
         System.out.println("Koje je vase ime?");
         String ime = sc.next();
