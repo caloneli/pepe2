@@ -18,7 +18,7 @@ public class Player {
     public void pretrazi() {
         System.out.println("Sta zelite da pretrazite? :\norman, psa, travu?");
 
-        String s = sc.nextLine();
+        String s = sc.next();
 
         switch (s) {
         case "orman":
@@ -52,7 +52,7 @@ public class Player {
             System.out.println(svi);
 
         }
-        String posao = sc.nextLine();
+        String posao = sc.next();
 
         while (imaPosao == false) {
             switch (posao) {
@@ -62,7 +62,7 @@ public class Player {
                 this.posao = "PROGRAMER";
                 break;
             case "CISTAC":
-                System.out.println("Zaposlili ste se kao programer! Vasa mesecna plata je 489e");
+                System.out.println("Zaposlili ste se kao cistac! Vasa mesecna plata je 489e");
                 imaPosao = true;
                 this.posao = "CISTAC";
                 break;
