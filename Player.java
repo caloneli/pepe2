@@ -158,6 +158,7 @@ public class Player {
 
     public void dajOtkaz() {
         System.out.println("E super, sada mozes da trazis novi posao!");
+        this.posao = "nista, lol. Dao si otkaz...";
         imaPosao = false;
     }
 
