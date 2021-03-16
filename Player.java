@@ -55,7 +55,8 @@ public class Player {
             System.out.println(svi);
 
         }
-        String posao = sc.next();
+        String posao = "";
+        posao = sc.next();
 
         while (imaPosao == false) {
             switch (posao) {
@@ -85,6 +86,7 @@ public class Player {
     public String getPosao() {
         System.out.println("Zaposleni ste kao " + this.posao);
         return this.posao;
+        //todo: neka ispise i platu za svaki posao ponaosob
     }
 
     /*a
