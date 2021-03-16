@@ -2,7 +2,7 @@ import java.util.Scanner;
 /*Poenta igrice je implementiranje metoda koje učimo na nastavi, a pritom napredovanje svog karaktera uz skupljanje novčića, a kasnije i sa 
 levelovanjem sebe, ljubimca itd... */
 
-//TODO: Omoguciti cuvanje napretka kao i kreiranje novih igraca, takodje i XP i Pet sistem
+//TODO: Omoguciti cuvanje napretka kao i kreiranje novih igraca, takodje XP, pet i SHOP sistem, hostovati na serveru kako bi igraci mogli da kradu jedni od drugih i interaktovati
 public class Player {
     String imeIgraca;
     int idIgraca;
